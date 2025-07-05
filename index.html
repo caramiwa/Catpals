@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat Pals – Match Cats for Friendship</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Flowbite CSS & JS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-white shadow">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="text-xl font-bold text-pink-600">Cat Pals 🐾</div>
+    <div class="space-x-4 hidden md:flex">
+      <a href="#features" class="text-gray-600 hover:text-pink-600">Features</a>
+      <a href="#testimonials" class="text-gray-600 hover:text-pink-600">Testimonials</a>
+      <a href="#pricing" class="text-gray-600 hover:text-pink-600">Pricing</a>
+      <a href="#contact" class="text-gray-600 hover:text-pink-600">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="container mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center justify-between">
+  <!-- Text + Download Buttons -->
+  <div class="md:w-1/2 text-center md:text-left space-y-4">
+    <h1 class="text-4xl font-bold text-pink-600">Find Cat Friends Nearby</h1>
+    <p class="text-lg text-gray-600">Helping your cat find friends in the neighborhood for safe, fun playdates.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+      <!-- Apple Button (Solid) -->
+      <a href="#" class="flex items-center justify-center bg-pink-600 hover:bg-pink-700 text-white font-semibold px-4 py-2 rounded shadow space-x-2 transition">
+        <i class="fab fa-apple fa-lg"></i>
+        <span>Download on Apple</span>
+      </a>
+      <!-- Android Button (Outlined) -->
+      <a href="#" class="flex items-center justify-center border-2 border-pink-600 text-pink-600 font-semibold px-4 py-2 rounded shadow space-x-2 transition hover:bg-pink-50">
+        <i class="fab fa-android fa-lg"></i>
+        <span>Download on Android</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Phone Mockup -->
+  <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+    <div class="relative bg-black border-8 border-black rounded-[2rem] w-64 h-[36rem] shadow-lg flex flex-col overflow-hidden">
+      <!-- Top Nav -->
+      <div class="bg-gray-800 text-white flex items-center justify-between px-4 py-2">
+        <div class="text-sm">Cat Pals</div>
+        <div class="text-lg">🐾</div>
+      </div>
+      <!-- Image -->
+      <img src="https://cataas.com/cat" alt="Cat" class="flex-1 object-cover">
+      <!-- Bottom ❤️ 💔 -->
+      <div class="bg-gray-800 flex justify-center items-center space-x-16 py-3">
+        <button class="text-3xl text-pink-400 hover:text-pink-500 transition">💔</button>
+        <button class="text-3xl text-pink-400 hover:text-pink-500 transition">❤️</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="container mx-auto px-4 py-12">
+  <h2 class="text-3xl font-bold text-center text-pink-600 mb-8">Features</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white rounded-xl shadow overflow-hidden">
+      <div class="bg-pink-600 text-white font-bold py-2 text-center">Friendly Matches</div>
+      <div class="p-6 text-center space-y-2">
+        <i class="fas fa-paw fa-2x text-pink-600"></i>
+        <p>Match your cat with others nearby who share similar play styles for safe, fun meetups.</p>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl shadow overflow-hidden">
+      <div class="bg-pink-600 text-white font-bold py-2 text-center">Safe Connections</div>
+      <div class="p-6 text-center space-y-2">
+        <i class="fas fa-shield-alt fa-2x text-pink-600"></i>
+        <p>Verified profiles and safety guidelines for a stress-free social experience for your cat.</p>
+      </div>
+    </div>
+    <div class="bg-white rounded-xl shadow overflow-hidden">
+      <div class="bg-pink-600 text-white font-bold py-2 text-center">Track Playdates</div>
+      <div class="p-6 text-center space-y-2">
+        <i class="fas fa-calendar-check fa-2x text-pink-600"></i>
+        <p>Schedule and track your cat’s playdates with reminders and activity summaries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<!-- Testimonials Section with Flowbite Carousel -->
+<section id="testimonials" class="bg-white py-12 px-4">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center text-pink-600 mb-8">Testimonials</h2>
+    <div id="testimonial-carousel" class="relative w-full max-w-xl mx-auto" data-carousel="static">
+      
+      <!-- Carousel Wrapper -->
+      <div class="relative h-72 overflow-hidden rounded-lg">
+        
+        <!-- Slide 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <div class="flex flex-col items-center justify-center h-full px-4 text-center">
+            <img src="https://cataas.com/cat?1" alt="Cat" class="w-24 h-24 rounded-full object-cover mb-4">
+            <p class="mb-2">"Cat Pals helped my shy cat find a playful companion. They meet weekly and love it!"</p>
+            <h6 class="text-pink-600 mt-2">– Alex & Luna 🐈</h6>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="flex flex-col items-center justify-center h-full px-4 text-center">
+            <img src="https://cataas.com/cat?2" alt="Cat" class="w-24 h-24 rounded-full object-cover mb-4">
+            <p class="mb-2">"Safe matching and meeting friends has made our cat so much happier and confident!"</p>
+            <h6 class="text-pink-600 mt-2">– Jamie & Socks 🐱</h6>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="flex flex-col items-center justify-center h-full px-4 text-center">
+            <img src="https://cataas.com/cat?3" alt="Cat" class="w-24 h-24 rounded-full object-cover mb-4">
+            <p class="mb-2">"Tracking playdates is fun, and it helps us ensure Mango has healthy social time."</p>
+            <h6 class="text-pink-600 mt-2">– Priya & Mango 🐾</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Indicators -->
+      <div class="flex justify-center mt-4 space-x-3">
+        <button type="button" class="w-3 h-3 rounded-full bg-pink-300" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-pink-300" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-pink-300" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      </div>
+
+      <!-- Slider Controls -->
+      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-pink-600/50 group-hover:bg-pink-600/80">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-pink-600/50 group-hover:bg-pink-600/80">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
+      </button>
+
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="container mx-auto px-4 py-12">
+  <h2 class="text-3xl font-bold text-center text-pink-600 mb-8">Pricing</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Free -->
+    <div class="bg-white rounded-xl shadow text-center border-2 border-pink-600 overflow-hidden">
+      <div class="bg-pink-600 text-white font-bold py-2">Free</div>
+      <div class="p-6">
+        <p class="text-3xl font-bold my-4">$0</p>
+        <p class="mb-4">Match with up to 3 cats, track 5 playdates per month, and access basic tips.</p>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded transition">Get Started</button>
+      </div>
+    </div>
+    <!-- Premium -->
+    <div class="bg-white rounded-xl shadow text-center border-2 border-pink-600 overflow-hidden">
+      <div class="bg-pink-600 text-white font-bold py-2">Premium</div>
+      <div class="p-6">
+        <p class="text-3xl font-bold my-4">$9.99/mo</p>
+        <p class="mb-4">Unlimited matches, unlimited playdate tracking, priority support, and advanced tips.</p>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded transition">Subscribe</button>
+      </div>
+    </div>
+    <!-- Enterprise -->
+    <div class="bg-white rounded-xl shadow text-center border-2 border-pink-600 overflow-hidden">
+      <div class="bg-pink-600 text-white font-bold py-2">Enterprise</div>
+      <div class="p-6">
+        <p class="text-3xl font-bold my-4">Contact</p>
+        <p class="mb-4">Custom solutions for cat cafes, shelters, and communities with dedicated support.</p>
+        <button class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded transition">Contact Us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="bg-white py-8">
+  <div class="container mx-auto text-center">
+    <p class="text-gray-600 mb-4">© 2025</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-600">
+      <div>
+        <h6 class="font-semibold mb-2">Section</h6>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-pink-600">Home</a></li>
+          <li><a href="#" class="hover:text-pink-600">Features</a></li>
+          <li><a href="#" class="hover:text-pink-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-pink-600">FAQs</a></li>
+          <li><a href="#" class="hover:text-pink-600">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-semibold mb-2">Section</h6>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-pink-600">Home</a></li>
+          <li><a href="#" class="hover:text-pink-600">Features</a></li>
+          <li><a href="#" class="hover:text-pink-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-pink-600">FAQs</a></li>
+          <li><a href="#" class="hover:text-pink-600">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="font-semibold mb-2">Section</h6>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-pink-600">Home</a></li>
+          <li><a href="#" class="hover:text-pink-600">Features</a></li>
+          <li><a href="#" class="hover:text-pink-600">Pricing</a></li>
+          <li><a href="#" class="hover:text-pink-600">FAQs</a></li>
+          <li><a href="#" class="hover:text-pink-600">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
